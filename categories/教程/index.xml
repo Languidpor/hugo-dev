@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on ZeraCat666</title>
+        <link>https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on ZeraCat666</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Donge</copyright>
+        <lastBuildDate>Sun, 23 Mar 2025 21:35:35 +0800</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>快速下载应用图片方法</title>
+        <link>https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/</link>
+        <pubDate>Sun, 23 Mar 2025 21:35:35 +0800</pubDate>
+        
+        <guid>https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/</guid>
+        <description>&lt;p&gt;本文以下载steam的图标为例展示。&lt;/p&gt;
+&lt;h3 id=&#34;第一步通过百度按照app-store上的xx应用格式搜索&#34;&gt;第一步：通过百度,按照“APP STORE上的XX应用”格式搜索。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/1.jpg&#34;
+	width=&#34;1044&#34;
+	height=&#34;290&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/1_hu_c9547db448b991de.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/1_hu_7f548769fcc6a14d.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;360&#34;
+		data-flex-basis=&#34;864px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第二步点击进入到应用下载页面按f12进入控制台界面&#34;&gt;第二步：点击进入到应用下载页面，按F12进入控制台界面。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/2.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;868&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/2_hu_1e52c57147f2cb6.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/2_hu_f06c04f398c5e6ba.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;221&#34;
+		data-flex-basis=&#34;530px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第三步先点击控制台中的按钮然后再选中steam图标&#34;&gt;第三步：先点击控制台中的按钮，然后再选中steam图标。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/3.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;869&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/3_hu_1c07c9bbcc3742b2.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/3_hu_2c6581258724e491.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;220&#34;
+		data-flex-basis=&#34;529px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第四步按图中顺序点击就可以跳转到图片&#34;&gt;第四步：按图中顺序点击就可以跳转到图片。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/4.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;869&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/4_hu_f09804349619770a.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/4_hu_b46c68165c89d536.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;220&#34;
+		data-flex-basis=&#34;529px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/5.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;958&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/5_hu_f4077709f6f79e5c.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/5_hu_abe21cfccd4f7636.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第五步在搜索栏更改相应数据即可得到自己想要的png格式图片&#34;&gt;第五步：在搜索栏更改相应数据即可得到自己想要的png格式图片。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/6.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;956&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/6_hu_76643a9ea8bb0394.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/6_hu_33c9a2c1db8d490e.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;481px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第六步最后效果如下图所示&#34;&gt;第六步：最后效果如下图所示。
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/7.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;962&#34;
+	srcset=&#34;https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/7_hu_165ed8ec3227fec2.jpg 480w, https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/7_hu_777bf2e302f1e284.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;478px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

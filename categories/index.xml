@@ -7,45 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Donge</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 Mar 2025 21:35:35 +0800</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>教程</title>
+        <link>https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sun, 23 Mar 2025 21:35:35 +0800</pubDate>
+        
+        <guid>https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>学习</title>
+        <link>https://Languidpor.github.io/hugo-dev/categories/%E5%AD%A6%E4%B9%A0/</link>
+        <pubDate>Sat, 22 Mar 2025 15:17:42 +0800</pubDate>
+        
+        <guid>https://Languidpor.github.io/hugo-dev/categories/%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;img src="https://Languidpor.github.io/hugo-dev/categories/%E5%AD%A6%E4%B9%A0/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 学习" /&gt;</description>
+        </item>
+        <item>
         <title>Test</title>
         <link>https://Languidpor.github.io/hugo-dev/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://Languidpor.github.io/hugo-dev/categories/test/</guid>
         <description>&lt;img src="https://Languidpor.github.io/hugo-dev/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>https://Languidpor.github.io/hugo-dev/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://Languidpor.github.io/hugo-dev/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Syntax</title>
-        <link>https://Languidpor.github.io/hugo-dev/categories/syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://Languidpor.github.io/hugo-dev/categories/syntax/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>https://Languidpor.github.io/hugo-dev/categories/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://Languidpor.github.io/hugo-dev/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>https://Languidpor.github.io/hugo-dev/categories/test-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://Languidpor.github.io/hugo-dev/categories/test-with-whitespaces/</guid>
-        <description></description>
         </item>
         
     </channel>
