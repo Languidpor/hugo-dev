@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Languidpor.github.io/hugo-dev/p/%E9%87%8D%E5%AD%A6mysql%E4%B8%80/'>
 
-<link rel="stylesheet" href="/hugo-dev/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="重学MySQL（一）">
+<link rel="stylesheet" href="/hugo-dev/scss/style.min.a7f637593c1d99350f36f270c9abc65cf39ec34b45847eb2fa40efef51b94c92.css"><meta property='og:title' content="重学MySQL（一）">
 <meta property='og:description' content="本文用于记录重学MySQL时的笔记，包括MySQL概述、SQL、函数、约束、多表查询、事务这六个章节。\n第一章 MySQL概述 第一节 数据库相关概念 名称 全称 简称 数据库 存储数据的仓库，数据是有组织的进行存储 DataBase（DB） 数据库管理系统 操纵和管理数据库的大型软件 DataBase Management System（DBMS） SQL 操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准 Structured Query Language（SQL） 第二节 MySQL启动 1 mysql -u root -p 第三节 数据模型 一个数据库可以由多张表构成。\n">
 <meta property='og:url' content='https://Languidpor.github.io/hugo-dev/p/%E9%87%8D%E5%AD%A6mysql%E4%B8%80/'>
 <meta property='og:site_name' content='ZeraCat666'>
@@ -284,7 +284,32 @@
         <li><a href="#第六节--dcl">第六节  DCL</a></li>
       </ol>
     </li>
-    <li><a href="#第三章--函数">第三章  函数</a></li>
+    <li><a href="#第三章--函数">第三章  函数</a>
+      <ol>
+        <li><a href="#第一节--字符串函数">第一节  字符串函数</a></li>
+        <li><a href="#第二节--数值函数">第二节  数值函数</a></li>
+        <li><a href="#第三节--日期函数">第三节  日期函数</a></li>
+        <li><a href="#第四节--流程函数">第四节  流程函数</a></li>
+      </ol>
+    </li>
+    <li><a href="#第四章--约束">第四章  约束</a>
+      <ol>
+        <li><a href="#第一节--概述">第一节  概述</a></li>
+        <li><a href="#第二节--约束演示">第二节  约束演示</a></li>
+        <li><a href="#第三节--外键约束">第三节  外键约束</a></li>
+      </ol>
+    </li>
+    <li><a href="#第五章--多表查询">第五章  多表查询</a>
+      <ol>
+        <li><a href="#第一节--多表关系">第一节  多表关系</a></li>
+        <li><a href="#第二节--多表查询概述">第二节  多表查询概述</a></li>
+        <li><a href="#第三节--内连接">第三节  内连接</a></li>
+        <li><a href="#第四节--外连接">第四节  外连接</a></li>
+        <li><a href="#第五节--自连接">第五节  自连接</a></li>
+        <li><a href="#第六节--子查询">第六节  子查询</a></li>
+        <li><a href="#第七节--多表查询案例">第七节  多表查询案例</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -1234,7 +1259,461 @@
 </li>
 </ol>
 <h2 id="第三章--函数">第三章  函数
-</h2>
+</h2><h3 id="第一节--字符串函数">第一节  字符串函数
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">CONCAT(S1,S2,…,Sn)</td>
+          <td style="text-align: center">字符串拼接，将S1、S2、… 、Sn拼接成一个字符串</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">LOWER(str)</td>
+          <td style="text-align: center">将字符串str全部转为小写</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">UPPER(str)</td>
+          <td style="text-align: center">将字符串str全部转为大写</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">LPAD(str,n,pad)</td>
+          <td style="text-align: center">左填充，用字符串pad对str的左边进行填充，达到n个字符串长度</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">RPAD(str,n,pad)</td>
+          <td style="text-align: center">右填充，用字符串pad对str的右边进行填充，达到n个字符串长度</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">TRIM(str)</td>
+          <td style="text-align: center">去掉字符串头部和尾部的空格</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">SUBSTRING(str,start,len)</td>
+          <td style="text-align: center">返回从字符串str从start位置起的len个长度的字符串</td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="err">函数</span><span class="p">(</span><span class="err">参数</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第二节--数值函数">第二节  数值函数
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">CEIL(x)</td>
+          <td style="text-align: center">向上取整</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">FLOOR(x)</td>
+          <td style="text-align: center">向下取整</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">MOD(x,y)</td>
+          <td style="text-align: center">返回 x/y 的模（余数）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">RAND()</td>
+          <td style="text-align: center">返回 0~1 内的随机数</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">ROUND(x,y)</td>
+          <td style="text-align: center">求参数 x 的四舍五入的值，保留 y 位小数</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>案例：通过数据库的函数，生成一个六位数的随机验证码。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="n">RPAD</span><span class="p">(</span><span class="n">ROUND</span><span class="p">(</span><span class="n">RAND</span><span class="p">()</span><span class="o">*</span><span class="mi">1000000</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">6</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第三节--日期函数">第三节  日期函数
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">CURDATE()</td>
+          <td style="text-align: center">返回当前日期</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">CURTIME()</td>
+          <td style="text-align: center">返回当前时间</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">NOW()</td>
+          <td style="text-align: center">返回当前日期和时间</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">YEAR(date)</td>
+          <td style="text-align: center">获取指定date的年份</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">MONTH(date)</td>
+          <td style="text-align: center">获取指定date的月份</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">DAY(date)</td>
+          <td style="text-align: center">获取指定date的日期</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">DATE_ADD(date, INTERVAL expr type)</td>
+          <td style="text-align: center">返回一个日期/时间值加上一个时间间隔expr后的时间值</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">DATEDIFF(date1, date2)</td>
+          <td style="text-align: center">返回起始时间date1和结束时间date2之间的天数</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>注意：DATEDIFF函数的返回值为date1-date2的值。</p>
+<h3 id="第四节--流程函数">第四节  流程函数
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">函数</th>
+          <th style="text-align: center">功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">IF(value, t, f)</td>
+          <td style="text-align: center">如果value为true，则返回t，否则返回f</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">IFNULL(value1, value2)</td>
+          <td style="text-align: center">如果value1不为空，返回value1，否则返回value2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">CASE WHEN [val1] THEN [res1] … ELSE [default] END</td>
+          <td style="text-align: center">如果val1为true，返回res1，… ，否则返回default默认值</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">CASE [expr] WHEN [val1] THEN [res1] … ELSE [default] END</td>
+          <td style="text-align: center">如果expr的值等于val1，返回res1，… ，否则返回default默认值</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>案例：查询emp表的员工姓名和工作地址。（工作地址为北京/上海的显示一线城市，其余显示二线城市）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="n">name</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="k">CASE</span><span class="w"> </span><span class="n">workaddress</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">&#39;北京&#39;</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;一线城市&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                       </span><span class="k">WHEN</span><span class="w"> </span><span class="s1">&#39;上海&#39;</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;一线城市&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                       </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;二线城市&#39;</span><span class="w"> </span><span class="k">END</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">emp</span><span class="p">;</span><span class="w">      
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第四章--约束">第四章  约束
+</h2><h3 id="第一节--概述">第一节  概述
+</h3><ol>
+<li>
+<p>概念：约束是作用于表中字段上的规则，用于限制存储在表中的数据。</p>
+</li>
+<li>
+<p>目的：保证数据库中数据的正确性、有效性和完整性。</p>
+</li>
+<li>
+<p>分类：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">约束</th>
+          <th style="text-align: center">描述</th>
+          <th style="text-align: center">关键字</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">非空约束</td>
+          <td style="text-align: center">限制该字段的数据不能为null</td>
+          <td style="text-align: center">NOT NULL</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">唯一约束</td>
+          <td style="text-align: center">保证该字段的所有数据都是唯一、不重复的</td>
+          <td style="text-align: center">UNIQUE</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">主键约束</td>
+          <td style="text-align: center">主键是一行数据的唯一标识，要求非空且唯一</td>
+          <td style="text-align: center">PRIMARY KEY</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">默认约束</td>
+          <td style="text-align: center">保存数据时，如果未指定该字段的值，则采用默认值</td>
+          <td style="text-align: center">DEFAULT</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">检查约束</td>
+          <td style="text-align: center">保证字段值满足某一个条件</td>
+          <td style="text-align: center">CHECK</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">外键约束</td>
+          <td style="text-align: center">用来让两张表的数据之间建立链接，保证数据的一致性和完整性</td>
+          <td style="text-align: center">FOREIGN KEY</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>注意：约束是作用于表中字段的，可以在创建表/修改表的时候添加约束。</p>
+</li>
+</ol>
+<h3 id="第二节--约束演示">第二节  约束演示
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">字段名</th>
+          <th style="text-align: center">字段含义</th>
+          <th style="text-align: center">字段类型</th>
+          <th style="text-align: center">约束条件</th>
+          <th style="text-align: center">约束关键字</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">id</td>
+          <td style="text-align: center">ID唯一标识</td>
+          <td style="text-align: center">int</td>
+          <td style="text-align: center">主键，并且自动增长</td>
+          <td style="text-align: center">PRIMARY KEY, AUTO_INCREMENT</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">name</td>
+          <td style="text-align: center">姓名</td>
+          <td style="text-align: center">varchar(10)</td>
+          <td style="text-align: center">不为空，并且唯一</td>
+          <td style="text-align: center">NOT NULL, UNIQUE</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">age</td>
+          <td style="text-align: center">年龄</td>
+          <td style="text-align: center">int</td>
+          <td style="text-align: center">大于0，并且小于等于120</td>
+          <td style="text-align: center">CHECK</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">status</td>
+          <td style="text-align: center">状态</td>
+          <td style="text-align: center">char(1)</td>
+          <td style="text-align: center">如果没有指定该值，默认为1</td>
+          <td style="text-align: center">DEFAULT</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">gender</td>
+          <td style="text-align: center">性别</td>
+          <td style="text-align: center">char(1)</td>
+          <td style="text-align: center">无</td>
+          <td style="text-align: center">——————</td>
+      </tr>
+  </tbody>
+</table></div>
+<ol>
+<li>
+<p>创建用户表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">user</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="n">AUTO_INCREMENT</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;主键&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;姓名&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">CHECK</span><span class="w"> </span><span class="p">(</span><span class="n">age</span><span class="o">&gt;</span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">age</span><span class="o">&lt;=</span><span class="mi">120</span><span class="p">)</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;年龄&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">status</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;状态&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">gender</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;性别&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;用户表&#39;</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>插入数据：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="k">user</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">gender</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;Tom1&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;男&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                                   </span><span class="p">(</span><span class="s1">&#39;Tom2&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;男&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                                   </span><span class="p">(</span><span class="s1">&#39;Tom3&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;女&#39;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h3 id="第三节--外键约束">第三节  外键约束
+</h3><ol>
+<li>
+<p>语法：</p>
+<ul>
+<li>
+<p>添加外键</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="err">字段名</span><span class="w">  </span><span class="err">数据类型</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="err">……</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">[</span><span class="k">CONSTRAINT</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="err">外键名称</span><span class="p">]</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="err">外键字段名</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="err">主表</span><span class="p">(</span><span class="err">主表列名</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="err">外键名称</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="err">外键字段名</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="err">主表</span><span class="p">(</span><span class="err">主表列名</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>删除外键</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="err">外键名称</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p>删除/更新行为：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">行为</th>
+          <th style="text-align: center">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">NO ACTION</td>
+          <td style="text-align: center">当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。（与RESTRICT一致）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">RESTRICT</td>
+          <td style="text-align: center">当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有则不允许删除/更新。（与NO ACTION一致）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">CASCADE</td>
+          <td style="text-align: center">当在父表中删除/更新对应记录时，首先检查该记录是否有对应外键，如果有，则也删除/更新外键在子表中的记录。</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">SET NULL</td>
+          <td style="text-align: center">当在父表中删除对应记录时，首先检查该记录是否有对应外键，如果有则设置子表中该外键值为null。（这就要求该外键允许取null）</td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="err">外键名称</span><span class="w"> </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="p">(</span><span class="err">外键字段名</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="err">主表</span><span class="p">(</span><span class="err">主表列名</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">CASCADE</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DELETE</span><span class="w"> </span><span class="k">CASCADE</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="第五章--多表查询">第五章  多表查询
+</h2><h3 id="第一节--多表关系">第一节  多表关系
+</h3><ol>
+<li>
+<p>概述：</p>
+<ul>
+<li>一对多（多对一）</li>
+<li>多对多</li>
+<li>一对一</li>
+</ul>
+</li>
+<li>
+<p>一对多（多对一）</p>
+<ul>
+<li>
+<p>案例：部门与员工的关系</p>
+</li>
+<li>
+<p>关系：一个部门对应多个员工，一个员工对应多个部门</p>
+</li>
+<li>
+<p>实现：在“多”的一方建立外键，指向“一”的一方的主键</p>
+</li>
+</ul>
+</li>
+<li>
+<p>多对多</p>
+<ul>
+<li>案例：学生与课程的关系</li>
+<li>关系：一个学生可以选修多门课程，一门课程也可以供多个学生选择</li>
+<li>实现：建立第三张中间表，中间表至少包含两个外键，分别关联两方主键</li>
+</ul>
+</li>
+<li>
+<p>一对一</p>
+<ul>
+<li>案例：用户与用户详情的关系</li>
+<li>关系：一对一关系，多用于单表拆分，将一张表的基础字段放在一张表中，其他详细字段放在另一张表中，以提高操作效率</li>
+<li>实现：在任意一方加入外键，关联另外一方的主键，并且设置外键为唯一的（UNIQUE）</li>
+</ul>
+</li>
+</ol>
+<h3 id="第二节--多表查询概述">第二节  多表查询概述
+</h3><h3 id="第三节--内连接">第三节  内连接
+</h3><h3 id="第四节--外连接">第四节  外连接
+</h3><h3 id="第五节--自连接">第五节  自连接
+</h3><h3 id="第六节--子查询">第六节  子查询
+</h3><h3 id="第七节--多表查询案例">第七节  多表查询案例
+</h3>
 </section>
 
 
