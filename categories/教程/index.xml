@@ -7,7 +7,101 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Donge</copyright>
-        <lastBuildDate>Sun, 23 Mar 2025 21:35:35 +0800</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Mar 2025 13:07:25 +0800</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>如何设计测试用例</title>
+        <link>https://Languidpor.github.io/hugo-dev/p/%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</link>
+        <pubDate>Tue, 25 Mar 2025 13:07:25 +0800</pubDate>
+        
+        <guid>https://Languidpor.github.io/hugo-dev/p/%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/</guid>
+        <description>&lt;h1 id=&#34;如何设计测试用例&#34;&gt;如何设计测试用例
+&lt;/h1&gt;&lt;h2 id=&#34;测试用例基本知识&#34;&gt;测试用例基本知识
+&lt;/h2&gt;&lt;h3 id=&#34;什么是测试用例&#34;&gt;什么是测试用例
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;为了特定目的&lt;/li&gt;
+&lt;li&gt;有测试输入&lt;/li&gt;
+&lt;li&gt;有执行条件&lt;/li&gt;
+&lt;li&gt;有预期结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以测试QQ邮箱登录为例：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;用例名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;测试数据&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;测试步骤&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;预期结果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;填写正确的QQ邮箱账号密码并登录成功&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;用户名&lt;br /&gt;密码&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1、打开QQ邮箱&lt;br /&gt;2、填写QQ邮箱账号和密码&lt;br /&gt;3、点击登录&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱登录成功，进入个人邮箱页面&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;测试用例的构成要素&#34;&gt;测试用例的构成要素
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;用例编号——用例的&lt;u&gt;唯一&lt;/u&gt;标识&lt;/li&gt;
+&lt;li&gt;用例标题——用例的简要描述
+&lt;ul&gt;
+&lt;li&gt;什么情况下&lt;/li&gt;
+&lt;li&gt;做什么事&lt;/li&gt;
+&lt;li&gt;有什么结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;测试项目——用例所属项目范畴&lt;/li&gt;
+&lt;li&gt;用例级别——用例重要程度&lt;/li&gt;
+&lt;li&gt;预置条件——用例执行的前提&lt;/li&gt;
+&lt;li&gt;测试输入——测试用例数据输入&lt;/li&gt;
+&lt;li&gt;执行步骤——执行用例的步骤&lt;/li&gt;
+&lt;li&gt;预期结果——应该得到的结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以测试QQ邮箱登录为例：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;用例编号&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;项目名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;用例名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;用例属性&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;重要等级&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;预置条件&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;测试数据&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;测试步骤&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;预期结果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQMail-Login-001&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱登录&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;填写正确的QQ邮箱账号密码并登录成功&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;功能测试&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;高&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱账号已注册成功&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;用户名&lt;br /&gt;密码&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1、打开QQ邮箱&lt;br /&gt;2、填写QQ邮箱账号和密码&lt;br /&gt;3、点击登录&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱登录成功，进入个人邮箱页面&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQMail-Login-002&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱登录&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;填写错误的QQ邮箱账号与错误密码后登录失败&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;功能测试&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;中&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱账号已注册成功&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;用户名&lt;br /&gt;密码（错误的密码）&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1、打开QQ邮箱&lt;br /&gt;2、填写QQ邮箱账号和密码&lt;br /&gt;3、点击登录&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;QQ邮箱登录失败，提示“邮箱账号或密码错误”&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;黑盒测试用例设计方法&#34;&gt;黑盒测试用例设计方法
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>快速下载应用图片方法</title>
         <link>https://Languidpor.github.io/hugo-dev/p/%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%BA%94%E7%94%A8%E5%9B%BE%E7%89%87%E6%96%B9%E6%B3%95/</link>
         <pubDate>Sun, 23 Mar 2025 21:35:35 +0800</pubDate>
