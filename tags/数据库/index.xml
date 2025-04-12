@@ -8,12 +8,12 @@
         <language>zh-cn</language>
         <copyright>Donge</copyright>
         <lastBuildDate>Sat, 22 Mar 2025 15:17:42 +0800</lastBuildDate><atom:link href="https://Languidpor.github.io/hugo-dev/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>重学MySQL（一）</title>
-        <link>https://Languidpor.github.io/hugo-dev/p/%E9%87%8D%E5%AD%A6mysql%E4%B8%80/</link>
+        <title>MySQL_1</title>
+        <link>https://Languidpor.github.io/hugo-dev/p/mysql_1/</link>
         <pubDate>Sat, 22 Mar 2025 15:17:42 +0800</pubDate>
         
-        <guid>https://Languidpor.github.io/hugo-dev/p/%E9%87%8D%E5%AD%A6mysql%E4%B8%80/</guid>
-        <description>&lt;img src="https://Languidpor.github.io/hugo-dev/p/%E9%87%8D%E5%AD%A6mysql%E4%B8%80/mysql-unsplash.jpg" alt="Featured image of post 重学MySQL（一）" /&gt;&lt;p&gt;本文用于记录重学MySQL时的笔记，包括MySQL概述、SQL、函数、约束、多表查询、事务这六个章节。&lt;/p&gt;
+        <guid>https://Languidpor.github.io/hugo-dev/p/mysql_1/</guid>
+        <description>&lt;img src="https://Languidpor.github.io/hugo-dev/p/mysql_1/mysql.jpg" alt="Featured image of post MySQL_1" /&gt;&lt;p&gt;本文用于记录重学MySQL时的笔记，包括MySQL概述、SQL、函数、约束、多表查询、事务这六个章节。&lt;/p&gt;
 &lt;h2 id=&#34;第一章--mysql概述&#34;&gt;第一章  MySQL概述
 &lt;/h2&gt;&lt;h3 id=&#34;第一节--数据库相关概念&#34;&gt;第一节  数据库相关概念
 &lt;/h3&gt;&lt;table&gt;
