@@ -9891,11 +9891,83 @@
 &lt;p&gt;&lt;del&gt;（三）附有客户额外购买选择权的销售&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;第七章--费用&#34;&gt;第七章  费用
 &lt;/h2&gt;&lt;h3 id=&#34;第一节--营业成本&#34;&gt;第一节  营业成本
-&lt;/h3&gt;&lt;h3 id=&#34;第二节--税金及附加&#34;&gt;第二节  税金及附加
-&lt;/h3&gt;&lt;h3 id=&#34;第三节--期间费用&#34;&gt;第三节  期间费用
-&lt;/h3&gt;&lt;h2 id=&#34;第八章--利润&#34;&gt;第八章  利润
+&lt;/h3&gt;&lt;p&gt;（一）主营业务成本&lt;/p&gt;
+&lt;p&gt;销售商品、提供劳务：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;借：主营业务成本
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    存货跌价准备
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  贷：库存商品、合同履约成本等
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;（二）其他业务成本&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;借：其他业务成本
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  贷：原材料【销售原材料的成本】
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      周转材料【出售包装物的成本或出租包装物的摊销额】
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      累计折旧【出租固定资产的折旧额】
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      累计摊销【出租无形资产的摊销额】
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      应付职工薪酬
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      银行存款等
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;第二节--税金及附加&#34;&gt;第二节  税金及附加
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;计算应交相关税费&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;借：税金及附加
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  贷：应交税费-应交消费税/应交资源税/应交城市维护建设税/应交教育费附加/应交房产税/应交城镇土地使用税
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              /应交车船税/应交环境保护税等
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;【注意】&lt;u&gt;印&lt;/u&gt;花税、计入相关资产成本的税费（如&lt;u&gt;耕&lt;/u&gt;地占用税、&lt;u&gt;车&lt;/u&gt;辆购置税、&lt;u&gt;契&lt;/u&gt;税、&lt;u&gt;关&lt;/u&gt;税等），由于不需要预计应纳税金额因此不通过“应交税费”科目核算。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;期末结转到本年利润&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;借：本年利润
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  贷：税金及附加
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;第三节--期间费用&#34;&gt;第三节  期间费用
+&lt;/h3&gt;&lt;p&gt;（一）销售费用&lt;/p&gt;
+&lt;p&gt;（二）管理费用&lt;/p&gt;
+&lt;p&gt;（三）财务费用&lt;/p&gt;
+&lt;h2 id=&#34;第八章--利润&#34;&gt;第八章  利润
 &lt;/h2&gt;&lt;h3 id=&#34;第一节--利润的概述&#34;&gt;第一节  利润的概述
-&lt;/h3&gt;&lt;h3 id=&#34;第二节--营业外收支&#34;&gt;第二节  营业外收支
+&lt;/h3&gt;&lt;p&gt;（一）营业利润&lt;/p&gt;
+&lt;p&gt;（二）利润总额&lt;/p&gt;
+&lt;p&gt;（三）净利润&lt;/p&gt;
+&lt;h3 id=&#34;第二节--营业外收支&#34;&gt;第二节  营业外收支
 &lt;/h3&gt;&lt;h3 id=&#34;第三节--所得税费用&#34;&gt;第三节  所得税费用
 &lt;/h3&gt;&lt;h3 id=&#34;第四节--本年利润&#34;&gt;第四节  本年利润
 &lt;/h3&gt;&lt;h2 id=&#34;第九章--财务报告&#34;&gt;第九章  财务报告
